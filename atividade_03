@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição - Festival de Talentos</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+        section { margin-bottom: 40px; border-bottom: 1px solid #ccc; padding-bottom: 20px; }
+        .campo { margin-bottom: 15px; }
+        label { display: block; font-weight: bold; }
+        textarea { width: 100%; height: 100px; }
+        video, audio { display: block; margin: 10px 0; max-width: 100%; }
+        iframe { width: 100%; height: 300px; border: 0; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Festival de Talentos: Edição 2026</h1>
+        <p>Preencha o formulário abaixo para garantir sua participação!</p>
+    </header>
+
+    <section id="inscricao">
+        <h2>Formulário de Inscrição</h2>
+        <form action="/enviar-inscricao" method="POST">
+            
+            <div class="campo">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="seunome@email.com" required>
+            </div>
+
+            <div class="campo">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone">
+            </div>
+
+            <div class="campo">
+                <label>Tipo de Apresentação:</label>
+                <input type="radio" id="musica" name="categoria" value="musica">
+                <label style="display:inline" for="musica">Música</label>
+                
+                <input type="radio" id="danca" name="categoria" value="danca">
+                <label style="display:inline" for="danca">Dança</label>
+                
+                <input type="radio" id="teatro" name="categoria" value="teatro">
+                <label style="display:inline" for="teatro">Teatro</label>
+            </div>
+
+            <div class="campo">
+                <label for="descricao">Descrição da Apresentação:</label>
+                <textarea id="descricao" name="descricao" placeholder="Conte-nos um pouco sobre o seu talento..."></textarea>
+            </div>
+
+            <div class="campo">
+                <label>Equipamentos Necessários:</label>
+                <input type="checkbox" id="mic" name="equipamentos" value="microfone">
+                <label style="display:inline" for="mic">Microfone</label><br>
+                
+                <input type="checkbox" id="proj" name="equipamentos" value="projetor">
+                <label style="display:inline" for="proj">Projetor</label><br>
+                
+                <input type="checkbox" id="som" name="equipamentos" value="caixa_som">
+                <label style="display:inline" for="som">Caixa de Som</label>
+            </div>
+
+            <button type="submit">Enviar Inscrição</button>
+        </form>
+    </section>
+
+    <section id="midias">
+        <h2>Mídias das Edições Anteriores</h2>
+
+        <h3>Vídeo Promocional</h3>
+        <video controls poster="poster.jpg" width="600">
+            <source src="video-festival.mp4" type="video/mp4">
+            <source src="video-festival.webm" type="video/webm">
+            Seu navegador não suporta este vídeo.
+        </video>
+
+        <h3>Jingle do Festival</h3>
+        <audio controls>
+            <source src="jingle.mp3" type="audio/mpeg">
+            <source src="jingle.ogg" type="audio/ogg">
+            Seu navegador não suporta este áudio.
+        </audio>
+
+        <h3>Local do Evento: Sesc Arsenal</h3>
+    <p>Rua 13 de Junho, 1435 - Centro Sul, Cuiabá - MT</p>
+    
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3842.535898394605!2d-56.10708682393309!3d-15.601550954315264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9399b13e5b0d33f5%3A0xa6560dd4b6a755bf!2sSesc%20Arsenal!5e0!3m2!1spt-PT!2sbr!4v1710000000000!5m2!1spt-PT!2sbr" 
+        width="100%" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Festival de Talentos. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
