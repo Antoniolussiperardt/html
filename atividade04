@@ -77,3 +77,70 @@
 </body>
 
 </html>
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #004a99;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #002d5c;
+    margin-bottom: 20px;
+}
+
+header h1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+article {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+article h3 {
+    color: #004a99;
+    font-size: 1.4rem;
+    margin-top: 0;
+    text-align: center;
+}
+
+aside {
+    background-color: #e9ecef;
+    padding: 15px;
+    border: 1px dashed #ccc;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}
